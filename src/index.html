@@ -17,12 +17,14 @@
             <h2>Elizete.</h2>
         </div>
 
-        <div class="md:hidden text-2xl text-white" ><i class='bx bx-menu'></i></div>
+        <div id="menuIcon" class="md:hidden text-2xl text-white bx bx-menu"></div>
 
-        <nav class="hidden md:flex gap-7 font-medium text-white ">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
+        <nav class="z-10 md:flex gap-7 font-medium text-center text-white md:p-0 md:static md:items-center md:justify-end md:left-0 md:top-0 md:bg-transparent md:shadow-none absolute -left-full top-full w-full p-5 bg-blue-300 shadow-lg transition-all duration-500 ease-out">
+            <a class="block" href="#">Home</a>
+            <a class="block mt-5 md:mt-0" href="#">About</a>
+            <a class="block mt-5 md:mt-0" href="#">Services</a>
+
+            <span class="-z-10 absolute -left-full top-0 w-full h-full p-5 bg-red-500 shadow-lg transition-all duration-500 ease-in-out"></span>
         </nav>
     </header>
 
@@ -65,5 +67,6 @@
         </div>
     </section>
     
+    <script src="./script.js"></script>
 </body>
 </html>
