@@ -701,6 +701,110 @@ nav.active span {
   background-color: rgb(224 224 224 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[url\] {
+  background-color: url;
+}
+
+.bg-bgColor\/50 {
+  background-color: rgb(245 245 245 / 0.5);
+}
+
+.bg-bgColor\/70 {
+  background-color: rgb(245 245 245 / 0.7);
+}
+
+.bg-bgColor\/90 {
+  background-color: rgb(245 245 245 / 0.9);
+}
+
+.bg-bgColor\/60 {
+  background-color: rgb(245 245 245 / 0.6);
+}
+
+.bg-white\/60 {
+  background-color: rgb(255 255 255 / 0.6);
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\.\/\'\)\] {
+  background-image: url('../');
+}
+
+.bg-\[url\(\'\.\.\/images\'\)\] {
+  background-image: url('../images');
+}
+
+.bg-\[url\(\'\.\.\/images\/\'\)\] {
+  background-image: url('../images/');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-i\'\)\] {
+  background-image: url('../images/bg-i');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-images\'\)\] {
+  background-image: url('../images/bg-images');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-images\.\'\)\] {
+  background-image: url('../images/bg-images.');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-images\.jpg\'\)\] {
+  background-image: url('../images/bg-images.jpg');
+}
+
+.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
+  background-image: url('/img/hero-pattern.svg');
+}
+
+.bg-\[url\(\'\.\.\/i\'\)\] {
+  background-image: url('../i');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-images\.j\'\)\] {
+  background-image: url('../images/bg-images.j');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-images\.jp\'\)\] {
+  background-image: url('../images/bg-images.jp');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-images\.jpf\'\)\] {
+  background-image: url('../images/bg-images.jpf');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -789,6 +893,16 @@ nav.active span {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-md {
+  --tw-blur: blur(12px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all {
@@ -953,6 +1067,10 @@ nav.active span {
     background-color: transparent;
   }
 
+  .md\:bg-\[url\(\'\.\.\/images\/bg-images\.jpg\'\)\] {
+    background-image: url('../images/bg-images.jpg');
+  }
+
   .md\:p-0 {
     padding: 0px;
   }
@@ -970,5 +1088,11 @@ nav.active span {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:bg-\[url\(\'\.\.\/images\/bg-images\.jpg\'\)\] {
+    background-image: url('../images/bg-images.jpg');
   }
 }
