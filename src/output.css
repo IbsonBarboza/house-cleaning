@@ -874,6 +874,14 @@ nav.active span {
   font-weight: 600;
 }
 
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
 .text-buttColor {
   --tw-text-opacity: 1;
   color: rgb(76 181 245 / var(--tw-text-opacity));
