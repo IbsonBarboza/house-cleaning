@@ -12,29 +12,29 @@
 <body class="">
 
     <!--HEADER SECTION-->
-    <header class="bg-green-300 px-5 py-3 flex items-center justify-between fixed w-full">
-        <div class="text-xl font-semibold text-white">
-            <h2>Elizete.</h2>
+    <header class="bg-transparent px-5 md:px-20 py-3 flex items-center justify-between fixed w-full">
+        <div class="text-xl font-semibold text-textColor">
+            <h2 class="text-highlightText">Elizete.</h2>
         </div>
 
-        <div id="menuIcon" class="md:hidden text-2xl text-white bx bx-menu"></div>
+        <div id="menuIcon" class="md:hidden text-2xl text-textColor bx bx-menu"></div>
 
-        <nav class="z-10 md:flex gap-7 font-medium text-center text-white md:p-0 md:static md:items-center md:justify-end md:left-0 md:top-0 md:bg-transparent md:shadow-none absolute -left-full top-full w-full p-5 bg-blue-300 shadow-lg transition-all duration-500 ease-out">
+        <nav class="z-10 md:flex gap-7 font-medium text-center text-textColor md:p-0 md:static md:items-center md:justify-end md:left-0 md:top-0 md:bg-transparent md:shadow-none absolute -left-full top-full w-full p-5 bg-highlightText shadow-lg transition-all duration-500 ease-out">
             <a class="block" href="#">Home</a>
             <a class="block mt-5 md:mt-0" href="#">About</a>
             <a class="block mt-5 md:mt-0" href="#">Services</a>
 
-            <span class="-z-10 absolute -left-full top-0 w-full h-full p-5 bg-red-500 shadow-lg transition-all duration-500 ease-in-out"></span>
+            <span class="-z-10 absolute -left-full top-0 w-full h-full p-5 bg-bgNav shadow-lg transition-all duration-500 ease-in-out"></span>
         </nav>
     </header>
 
     <!--HOME SECTION-->
-    <section class="bg-pink-300 min-h-screen px-5 flex items-center">
+    <section class="bg-bgColor min-h-screen px-5 md:px-20 flex items-center">
 
         <!--Introduction-->
         <div class="text-center md:text-start">
-            <h1 class="text-5xl font-semibold text-white mb-2 pt-10">Hi, I'm <br class="md:hidden"><span class="text-purple-400">Elizete Ferreira</span></h1>
-            <h2 class="text-4xl font-medium text-white">
+            <h1 class="text-5xl font-semibold text-textColor mb-2 pt-10">Hi, I'm <br class="md:hidden"><span class="text-highlightText">Elizete Ferreira</span></h1>
+            <h2 class="text-4xl font-medium text-highlightText">
                 House Cleaner
             </h2>
             <p class="my-5 md:max-w-lg">
@@ -43,25 +43,46 @@
 
             <!--Hire Me Buttons-->
             <div>
-                <h2 class="text-3xl font-medium text-white mb-3">Contact me!</h2>
+                <h2 class="text-3xl font-medium text-textColor mb-3">Contact <span class="text-highlightText">me!</span></h2>
                 <div class="flex flex-col md:flex-row gap-2">
-                    <button class="flex items-center justify-center gap-4 border-2 text-white font-bold text-xl border-purple-400 bg-white/50 h-12 md:h-14 md:w-48 rounded-lg">
-                        Hire Me by
-                        <span><i class='bx bxl-gmail'></i></span>
-                    </button>
-                    <button class="flex items-center justify-center gap-4 border-2 text-white font-bold text-xl border-purple-400 bg-white/50 h-12 md:h-14 md:w-48 rounded-lg">
-                        Contact Me on
-                        <span><i class='bx bxl-whatsapp' ></i></span>
-                    </button>
+                    
+                    <div class="border-2 border-buttColor rounded-lg relative z-10 overflow-hidden">
+                        <button class="before:absolute before:top-0 before:right-0 hover:before:w-full before:bg-bgButtons before:w-0 before:h-full before:-z-10 before:transition-all before:duration-500 hover:text-buttColor transition-all duration-700
+                        flex items-center justify-center gap-4  text-highlightText font-bold text-xl bg-transparent h-12 w-full md:h-14 md:w-48">
+                            Hire Me by
+                            <span><i class='bx bxl-gmail'></i></span>
+                        </button>
+                    </div>
+
+                    <div class="border-2 border-buttColor rounded-lg relative z-10 overflow-hidden">
+                        <button class="before:absolute before:top-0 before:left-0 hover:before:w-full before:bg-bgButtons before:w-0 before:h-full before:-z-10 before:transition-all before:duration-500 hover:text-highlightText transition-all duration-700
+                        flex items-center justify-center gap-4  text-buttColor font-bold text-xl bg-transparent h-12 w-full md:h-14 md:w-48">
+                            Contact Me on
+                            <span><i class='bx bxl-whatsapp' ></i></span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
 
             <!--Social Media-->
-            <div class="mt-7">
-                <h2 class="text-2xl font-medium text-white mb-3">Check My Work!</h2>
+            <div class="mt-7 md:mt-28">
+                <h2 class="text-2xl font-medium text-textColor mb-3">Check <span class="text-highlightText">My Work!</span></h2>
+                
                 <div class="flex gap-5 justify-center md:justify-start">
-                    <div class="border-2 rounded-full text-2xl px-3 py-2"><a href="#"><i class='bx bxl-facebook'></i></a></div>
-                    <div class="border-2 rounded-full text-2xl px-3 py-2"><a href="#"><i class='bx bxl-instagram' ></i></a></div>
+
+                    <div class="relative z-10 overflow-hidden border-2 border-buttColor text-buttColor hover:text-bgColor transition-all duration-700 rounded-full">
+                        <button class="before:absolute before:top-0 before:left-0 hover:before:w-full before:bg-buttColor before:w-0 before:h-full before:-z-10 before:transition-all before:duration-500 flex">
+                            <a class="text-2xl px-3 py-2  bx bxl-facebook" href="#"></a>
+                        </button>
+                    </div>
+
+                    <div class="relative z-10 overflow-hidden border-2 border-buttColor text-buttColor hover:text-bgColor transition-all duration-700 rounded-full">
+                        <button class="before:absolute before:top-0 before:left-0 hover:before:w-full before:bg-buttColor before:w-0 before:h-full before:-z-10 before:transition-all before:duration-500 flex">
+                            <a class="text-2xl px-3 py-2 bx bxl-instagram" href="#"></a>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
